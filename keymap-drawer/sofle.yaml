@@ -1,7 +1,66 @@
 layout: {zmk_keyboard: sofle}
 layers:
-  default: [ESCAPE, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', BACKSPACE, TAB, Q, W, E, R, T, Y, U, I, O, P, '-', RETURN, A, S, D, F, G, H, J, K, L, ;, '''',
-    LSHFT, Z, X, C, V, B, MUTE, '', N, M, ',', ., /, RSHFT, '[', ']', LEFT COMMAND, LEFT ALT, LEFT CONTROL, SPACE, SPACE, LEFT ARROW, RIGHT ARROW, '&mission_control']
+  default:
+  - ESCAPE
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - BACKSPACE
+  - TAB
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - '-'
+  - CAPSLOCK
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - ''''
+  - LSHFT
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - MUTE
+  - ''
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - Sft+ENTER
+  - LEFT CONTROL
+  - LEFT ALT
+  - LEFT COMMAND
+  - {t: raise, h: toggle}
+  - ENTER
+  - SPACE
+  - {t: lower, h: toggle}
+  - LEFT ARROW
+  - RIGHT ARROW
+  - '&mission_control'
   lower:
   - '&studio_unlock'
   - F1
@@ -56,10 +115,10 @@ layers:
   - '&studio_unlock'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: default, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: raise, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -117,74 +176,13 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: lower, h: toggle}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: default, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  adjust:
-  - BT CLR
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - EP TOG
-  - RGB HUD
-  - RGB HUI
-  - RGB SAD
-  - RGB SAI
-  - RGB EFF
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - RGB BRD
-  - RGB BRI
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - RGB TOG
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
 combos:
 - p: [55, 58]
   k: {t: lower, h: toggle}
