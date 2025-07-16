@@ -16,24 +16,9 @@
 / {
     // Activate ADJUST layer by pressing raise and lower
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 
-        adjust_layer {
-            if-layers = <1 2>;
-            then-layer = <3>;
-        };
-    };
-
-    combos {
-        compatible = "zmk,combos";
-
-        zero_to_one {
-            bindings = <&to 1>;
-            key-positions = <55 58>;
-            layers = <0>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     macros {
         mission_control: mission_control {
@@ -47,8 +32,8 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
-            label = "default";
+        zero {
+            label = "0";
 
             // ------------------------------------------------------------------------------------------------------------
             // |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |       |
@@ -68,8 +53,8 @@
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
-        layer_one {
-            label = "lower";
+        one {
+            label = "1";
 
             // TODO: Some binds are waiting for shifted keycode support.
             // ------------------------------------------------------------------------------------------------------------
@@ -90,8 +75,8 @@
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
-        layer_two {
-            label = "raise";
+        two {
+            label = "2";
 
             // ------------------------------------------------------------------------------------------------------------
             // | BTCLR | BT1  | BT2  |  BT3  |  BT4  |  BT5 |                |      |      |       |      |       |       |
