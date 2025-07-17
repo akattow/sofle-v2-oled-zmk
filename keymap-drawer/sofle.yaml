@@ -60,7 +60,7 @@ layers:
   - {t: '1', h: '1'}
   - LEFT ARROW
   - RIGHT ARROW
-  - Alt+UP
+  - Ctl+UP
   '1':
   - '&studio_unlock'
   - F1
