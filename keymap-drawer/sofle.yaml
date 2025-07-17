@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: sofle}
 layers:
-  default:
+  '0':
   - ESCAPE
   - '1'
   - '2'
@@ -54,14 +54,14 @@ layers:
   - LEFT CONTROL
   - LEFT ALT
   - LEFT COMMAND
-  - {t: raise, h: toggle}
+  - {t: '2', h: '2'}
   - ENTER
   - SPACE
-  - {t: lower, h: toggle}
+  - {t: '1', h: '1'}
   - LEFT ARROW
   - RIGHT ARROW
-  - '&mission_control'
-  lower:
+  - Alt+UP
+  '1':
   - '&studio_unlock'
   - F1
   - F2
@@ -115,14 +115,14 @@ layers:
   - '&studio_unlock'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: default, h: toggle}
+  - {t: '0', h: '0'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: raise, h: toggle}
+  - {t: '2', h: '2', type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  raise:
+  '2':
   - BT CLR
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
@@ -176,14 +176,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: lower, h: toggle}
+  - {t: '1', h: '1', type: held}
+  - '&bootloader'
+  - '&bootloader'
+  - {t: '0', h: '0'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: default, h: toggle}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-combos:
-- p: [55, 58]
-  k: {t: lower, h: toggle}
-  l: [default]
