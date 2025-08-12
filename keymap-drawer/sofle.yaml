@@ -43,7 +43,7 @@ layers:
   - C
   - V
   - B
-  - MUTE
+  - {t: ▽, type: trans}
   - ''
   - N
   - M
@@ -58,9 +58,9 @@ layers:
   - ENTER
   - SPACE
   - {t: '1', h: '1'}
+  - SPACE
   - LEFT ARROW
   - RIGHT ARROW
-  - Ctl+UP
   '1':
   - '&studio_unlock'
   - F1
@@ -183,3 +183,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+combos:
+- p: [52, 35]
+  k: ENTER
