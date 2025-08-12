@@ -23,8 +23,9 @@
 
         combo_enter {
             bindings = <&kp RETURN>;
-            key-positions = <52 35>;
+            key-positions = <35>;
             layers = <0 1 2>;
+            timeout-ms = <300>;
         };
     };
 
