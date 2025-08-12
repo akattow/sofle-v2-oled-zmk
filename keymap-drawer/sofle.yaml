@@ -43,7 +43,7 @@ layers:
   - C
   - V
   - B
-  - {t: ▽, type: trans}
+  - ''
   - ''
   - N
   - M
@@ -185,4 +185,5 @@ layers:
   - {t: ▽, type: trans}
 combos:
 - p: [52, 35]
-  k: ENTER
+  k: RETURN
+  l: ['0', '1', '2']
