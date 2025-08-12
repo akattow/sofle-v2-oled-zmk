@@ -22,7 +22,7 @@
         compatible = "zmk,combos";
 
         combo_enter {
-            bindings = <&kp RETURN>;
+            bindings = <&kp ENTER>;
             key-positions = <35>;
             layers = <0 1 2>;
             timeout-ms = <300>;
