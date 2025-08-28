@@ -50,14 +50,14 @@ layers:
   - ','
   - .
   - /
-  - RIGHT SHIFT
+  - RSHIFT
   - LEFT CONTROL
   - LEFT ALT
   - LEFT COMMAND
   - {t: '2', h: '2'}
   - ENTER
+  - ENTER
   - SPACE
-  - {t: '1', h: '1'}
   - SPACE
   - LEFT ARROW
   - RIGHT ARROW
@@ -118,7 +118,7 @@ layers:
   - {t: '0', h: '0'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: '2', h: '2', type: held}
+  - {t: '2', h: '2'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -184,6 +184,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
-- p: [52, 35]
-  k: RETURN
+- p: [35, 52, 36]
+  k: ENTER
   l: ['0', '1', '2']
