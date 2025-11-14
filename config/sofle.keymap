@@ -23,9 +23,19 @@
 
         combo_enter {
             bindings = <&kp ENTER>;
-            key-positions = <35 52 36>;
+            key-positions = <35 36>;
             layers = <0 1 2>;
             timeout-ms = <300>;
+        };
+
+        up_arrow {
+            bindings = <&kp UP_ARROW>;
+            key-positions = <36 59>;
+        };
+
+        down_arrow {
+            bindings = <&kp DOWN_ARROW>;
+            key-positions = <36 58>;
         };
     };
 
