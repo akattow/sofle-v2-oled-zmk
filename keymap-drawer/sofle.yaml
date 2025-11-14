@@ -184,6 +184,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
-- p: [35, 52, 36]
+- p: [35, 36]
   k: ENTER
   l: ['0', '1', '2']
+- p: [36, 59]
+  k: UP ARROW
+- p: [36, 58]
+  k: DOWN ARROW
